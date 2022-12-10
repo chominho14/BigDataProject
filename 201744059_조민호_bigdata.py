@@ -474,7 +474,7 @@ smap = folium.Map(location=[37.5144533,127.1059047], tiles='Stamen Terrain', zoo
 for name,price , lat, lng in zip(df_final.아파트명,df_final.매매호가, df_final.latitude, df_final.longitude):
   folium.Marker([lat,lng], popup=[name,price]).add_to(smap)
 
-smap
+# smap
 
 """---
 ### 2-2. 초등학교 학군에 따른 세대수 차이가 있을까?
@@ -592,7 +592,7 @@ import numpy as np
 
 # 아파트 가격이 변화한 비율을 추가(값이 워낙 작아 100을 곱해준다)
 def songpa_minus_apt(a, b):
-  return round((a/(a+b))*100)
+  return round((a/(b-a))*100)
 
 df_final['songpa_change_rate'] = df_final.apply(lambda x: songpa_minus_apt(x['최근가격변동'],x['가격']), axis=1)
 
@@ -624,7 +624,7 @@ for name,rate , lat, lng in zip(df_final.아파트명,df_final.songpa_change_rat
                       fill_color='coral',
                       fill_opacity=0.7,
                       popup=[name,rate]).add_to(smap)
-smap
+# smap
 
 """
 #### 2-4-2. 데이터 시각화
