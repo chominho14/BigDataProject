@@ -36,6 +36,8 @@
 
 ### ✅ 데이터 분석
 
+<img width="757" alt="image" src="https://user-images.githubusercontent.com/62542933/206828997-167ea0f8-7d19-4c24-bdd0-9632df0b92ff.png">
+
 #### 데이터 전처리
 
 - 추출 : Pandas
@@ -63,8 +65,6 @@
 ```
 
 #### 데이터 시각화
-
-<img width="757" alt="image" src="https://user-images.githubusercontent.com/62542933/206828997-167ea0f8-7d19-4c24-bdd0-9632df0b92ff.png">
 
 - folium
 
