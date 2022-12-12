@@ -66,7 +66,7 @@
 
 #### 데이터 시각화
 
-- folium
+- Folium
 
 <img width="1089" alt="24" src="https://user-images.githubusercontent.com/62542933/206899386-7b35e22a-3378-4218-a097-b7521e9ae427.png">
 
@@ -102,7 +102,7 @@ for name,rate , lat, lng in zip(df_final.아파트명,df_final.songpa_change_rat
 smap
 ```
 
-- seaborn
+- Seaborn
 
 <img width="1099" alt="32" src="https://user-images.githubusercontent.com/62542933/206899543-f0f9081a-aeec-4619-aadc-e5c0eff140c3.png">
 
@@ -151,7 +151,7 @@ sns.set(rc={'figure.figsize':(70,8)},font="NanumBarunGothic")
 sns.lineplot(data=grouped_school_price_mean, x='초등학교_학군정보',y='가격', marker='o', color='r', linestyle=':')
 ```
 
-- mataplotlib
+- Mataplotlib
 
 <img width="502" alt="43" src="https://user-images.githubusercontent.com/62542933/206899612-f5c1c10e-7b39-4935-bba5-c9007ca17ee6.png">
 
@@ -174,5 +174,3 @@ plt.pie(ratio, labels=labels,colors=colors, explode=explode, autopct='%.1f%%')
 
 plt.show()
 ```
-
----
